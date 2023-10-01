@@ -1,0 +1,167 @@
+
+.navbar {
+  width: 99%;
+  height: 80px;
+  margin-top: 3px;
+  border-radius: #000;
+  background: transparent;
+  position: fixed;
+  background: rgb(246, 249, 252, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 16%;
+  left: 2%;
+}
+
+.heading {
+  width: 170px;
+  color: #000;
+  text-align: center;
+  font-family: Rajdhani;
+  font-size: 35px;
+  /* font-style: normal; */
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  position: absolute;
+  top: 23%;
+  left: 5.5%;
+}
+
+.about {
+  color: #000;
+  text-align: center;
+  font-family: Miriam Libre;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.56;
+  position: absolute;
+  top: 32%;
+  left: 19%;
+}
+
+.colourmode {
+  position: absolute;
+  border-radius: 11px;
+  background: #0e7cc4;
+  top: 32%;
+  left: 27.7%;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.moon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  transform: translate(20%, 20%);
+}
+
+.Connect {
+  color: #06f;
+  text-align: center;
+  font-family: Miriam Libre;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100px;
+  height: 24px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 32%;
+  right: 2.5%;
+}
+
+.metamask {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 32%;
+  right: 9%;
+}
+
+.Connect:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.main {
+  background-color: #a3c3e4;
+}
+
+.welcomecontent {
+  width: 521px;
+  height: 214px;
+  color: #000;
+  font-family: Armata;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.blockdiagram {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.learnmore {
+  position: absolute;
+  width: 220px;
+  height: 50px;
+  top: 83.4%;
+  left: 5.3%;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Armata;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background: #06f;
+  border: none;
+}
+
+.subheading {
+  color: #0e6ba8;
+  text-align: center;
+  font-family: Armata;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 120%;
+  left: 40%;
+}
+
+.serviceweprovide{
+    color: #030303;
+font-family: Armata;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background-color: transparent;
+}
+
