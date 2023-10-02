@@ -66,18 +66,12 @@
   top: 32.3%;
   left: 17%;
   overflow: hidden;
-}
-
-.aboutbox:hover {
-  width: 140px;
-  left: 15.8%;
-  border-radius: 25px;
   cursor: pointer;
-  background-color: #63a0fb;
 }
 
 .aboutbox:hover .about {
-  color: white;
+  color: #06f;
+  font-size: 25.1px;
   opacity: 1;
   top: 15%;
   transition: 0.2s;
@@ -86,7 +80,7 @@
 .colourmode {
   position: absolute;
   border-radius: 11px;
-  background: #63a0fb;
+  background: rgb(45, 129, 255);
   top: 33%;
   left: 25.5%;
   width: 30px;
@@ -100,6 +94,7 @@
   top: 30%;
   left: 25.3%;
   transition: 0.2s;
+  box-shadow: 0px 0px 10px 0px #06f;
 }
 
 .moon {
@@ -123,14 +118,17 @@
   top: 28%;
   right: 1.5%;
   cursor: pointer;
+  background-color: rgb(40, 123, 247);
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .Connect {
-  color: #06f;
+  color: white;
   font-family: Miriam Libre;
   font-size: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   opacity: 0.8;
   position: absolute;
@@ -148,17 +146,17 @@
 }
 
 .connectbutton:hover{
-  border-radius: 10px;
   z-index: -1;
-  background-color: #4690ff;
+  box-shadow: 0px 0px 10px 0px #06f;
+  font-size: 25.5px;
   transition-duration: 0.1s;
 }
 
 .connectbutton:hover .Connect {
-  color: #000;
   cursor: pointer;
   color: white;
   transition-duration: 0.2s;
+  font-size: 25.5px;
 }
 
 .main {
@@ -202,15 +200,17 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  border-radius: 7px;
+  border-radius: 10px;
   background: #06f;
   border: none;
 }
 
 .learnmore:hover {
   cursor: pointer;
-  border-radius: 15px;
-  transition-duration: 0.1s;
+  font-size: 20.5px;
+  transition-duration: 10ms;
+  box-shadow: 0px 0px 10px 0px #06f;
+  font-weight: 500;
 }
 
 .subheading {
