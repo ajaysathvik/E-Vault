@@ -1,3 +1,6 @@
+*{
+  overflow-x: hidden;
+}
 
 .navbar {
   width: 99%;
@@ -11,6 +14,8 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 25px;
   z-index: 1;
+  border: 0.1px solid rgba(228, 225, 225, 0.18);
+  overflow: hidden;
 }
 
 .icon {
@@ -18,7 +23,15 @@
   height: 55px;
   position: absolute;
   top: 16%;
-  left: 2%;
+  left: 1.5%;
+}
+
+.icon:hover {
+  width: 60px;
+  top: 14%;
+  left: 1.4%;
+  height: 60px;
+  transition-duration: 0.2s;
 }
 
 .heading {
@@ -27,13 +40,12 @@
   text-align: center;
   font-family: Rajdhani;
   font-size: 35px;
-  /* font-style: normal; */
   font-weight: 400;
   line-height: normal;
   opacity: 0.7;
   position: absolute;
   top: 23%;
-  left: 5.5%;
+  left: 5%;
 }
 
 .about {
@@ -45,20 +57,49 @@
   font-weight: 400;
   line-height: normal;
   opacity: 0.56;
+}
+
+.aboutbox {
+  width: 100px;
+  height: 30px;
   position: absolute;
-  top: 32%;
-  left: 19%;
+  top: 32.3%;
+  left: 17%;
+  overflow: hidden;
+}
+
+.aboutbox:hover {
+  width: 140px;
+  left: 15.8%;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #63a0fb;
+}
+
+.aboutbox:hover .about {
+  color: white;
+  opacity: 1;
+  top: 15%;
+  transition: 0.2s;
 }
 
 .colourmode {
   position: absolute;
   border-radius: 11px;
-  background: #0e7cc4;
-  top: 32%;
-  left: 27.7%;
+  background: #63a0fb;
+  top: 33%;
+  left: 25.5%;
   width: 30px;
   height: 30px;
-  flex-shrink: 0;
+}
+
+.colourmode:hover {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  top: 30%;
+  left: 25.3%;
+  transition: 0.2s;
 }
 
 .moon {
@@ -68,38 +109,61 @@
   transform: translate(20%, 20%);
 }
 
+.colourmode:hover .moon {
+  transform: translate(22%, 22%);
+  width: 25px;
+  height: 25px;
+  transition-duration: 0.2s;
+}
+
+.connectbutton {
+  width: 170px;
+  height: 40px;
+  position: absolute;
+  top: 28%;
+  right: 1.5%;
+  cursor: pointer;
+}
+
 .Connect {
   color: #06f;
-  text-align: center;
   font-family: Miriam Libre;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 100px;
-  height: 24px;
-  flex-shrink: 0;
   opacity: 0.8;
   position: absolute;
-  top: 32%;
-  right: 2.5%;
+  top: 11%;
+  left: 33%;
 }
 
 .metamask {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 32%;
-  right: 9%;
+  top: 28%;
+  right: 8.5%;
+  cursor: pointer;
 }
 
-.Connect:hover {
+.connectbutton:hover{
+  border-radius: 10px;
+  z-index: -1;
+  background-color: #4690ff;
+  transition-duration: 0.1s;
+}
+
+.connectbutton:hover .Connect {
   color: #000;
   cursor: pointer;
+  color: white;
+  transition-duration: 0.2s;
 }
 
 .main {
   background-color: #a3c3e4;
+  overflow-x: hidden;
 }
 
 .welcomecontent {
@@ -115,6 +179,7 @@
   position: absolute;
   top: 20%;
   left: 5%;
+  overflow: hidden;
 }
 
 .blockdiagram {
@@ -127,7 +192,7 @@
   position: absolute;
   width: 220px;
   height: 50px;
-  top: 83.4%;
+  top: 77%;
   left: 5.3%;
   flex-shrink: 0;
   color: #fff;
@@ -140,6 +205,12 @@
   border-radius: 7px;
   background: #06f;
   border: none;
+}
+
+.learnmore:hover {
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.1s;
 }
 
 .subheading {
@@ -155,13 +226,84 @@
   left: 40%;
 }
 
-.serviceweprovide{
-    color: #030303;
-font-family: Armata;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-background-color: transparent;
+.serviceweprovide {
+  color: #030303;
+  font-family: Armata;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
 }
 
+.serviceno1 {
+  color: #118bda;
+  position: absolute;
+  top: 145%;
+  font-size: 27px;
+  font-family: JetBrains Mono;
+  left: 5%;
+}
+
+.serviceno1content {
+  color: #030303;
+  position: absolute;
+  top: 149.5%;
+  font-size: 18px;
+  font-family: Armata;
+  left: 5%;
+  line-height: 250%;
+}
+
+.serviceno2 {
+  color: #118bda;
+  position: absolute;
+  top: 160%;
+  font-size: 27px;
+  font-family: JetBrains Mono;
+  left: 5%;
+}
+
+.serviceno2content {
+  color: #030303;
+  position: absolute;
+  top: 164.5%;
+  font-size: 18px;
+  font-family: Armata;
+  left: 5%;
+  line-height: 250%;
+}
+
+.serviceno3 {
+  color: #118bda;
+  position: absolute;
+  top: 175%;
+  font-size: 27px;
+  font-family: JetBrains Mono;
+  left: 5%;
+}
+
+.serviceno3content {
+  color: #030303;
+  position: absolute;
+  top: 179.5%;
+  font-size: 18px;
+  font-family: Armata;
+  left: 5%;
+  line-height: 250%;
+}
+
+.data {
+  width: 937px;
+  height: 708px;
+  border-radius: 25px;
+  position: absolute;
+  top: 200%;
+  transform: translate(49%, 0%);
+}
+
+.footer {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 190%;
+}

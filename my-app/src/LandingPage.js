@@ -1,9 +1,11 @@
 import React from "react";
 import icon from "./assets/Screenshot_2023-09-20_201047-removebg-preview.png";
 import "./LandingPage.css";
-import moon from "./assets/moon (1) 2.png";
 import metamask from "./assets/Untitled_design__9__1-removebg-preview.png";
 import blockdiagram from "./assets/original-4cfe1ccf4ff167f1e18b27afe33c1f5d 1.png";
+import data from "./assets/image 13.png"
+import lightmode from "./moon";
+import moonpic from "./assets/moon (1) 2.png";
 
 const LandingPage = () => {
   return (
@@ -11,13 +13,17 @@ const LandingPage = () => {
       <div className="navbar">
         <img className="icon" alt="icon" src={icon}></img>
         <div className="heading">TrustVault</div>
-        <div className="about">About</div>
-        <div className="colourmode">
-          <img src={moon} alt="moon" className="moon"></img>
+        <div className="aboutbox">
+          <div className="about">About</div>
         </div>
+        <div className="colourmode">
+        <img src={moonpic} alt="moon" className="moon"></img>
+      </div>
         <div className="connect">
           <img src={metamask} alt="metamask" className="metamask" />
-          <div className="Connect">Connect</div>
+          <div className="connectbutton">
+            <div className="Connect">Connect</div>
+          </div>
         </div>
       </div>
       <div className="main">
@@ -54,6 +60,7 @@ const LandingPage = () => {
             manage important records with a formal tone.
           </div>
         </div>
+        <div className="footer"></div>
       </div>
     </div>
   );
