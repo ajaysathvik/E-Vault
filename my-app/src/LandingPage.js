@@ -3,8 +3,6 @@ import icon from "./assets/Screenshot_2023-09-20_201047-removebg-preview.png";
 import "./LandingPage.css";
 import metamask from "./assets/Untitled_design__9__1-removebg-preview.png";
 import blockdiagram from "./assets/original-4cfe1ccf4ff167f1e18b27afe33c1f5d 1.png";
-import data from "./assets/image 13.png"
-import lightmode from "./moon";
 import moonpic from "./assets/moon (1) 2.png";
 
 const LandingPage = () => {
